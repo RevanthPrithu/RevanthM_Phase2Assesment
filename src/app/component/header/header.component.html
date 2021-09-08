@@ -1,0 +1,21 @@
+
+<header>
+    <div class="navbar navbar-dark ">
+        <div class="navbar-brand align-item-center d-flex">
+            
+            <strong style="font-size: 30px; color:#FFB344;">Kitchen Store</strong>
+           
+            <div class="form-group">
+                <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Search food here">
+            </div>
+           <pre>
+
+           </pre>
+
+        </div>
+        <button routerLink="cart" class="btn btn-success">
+            <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+            <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+        </button>
+    </div>
+</header>
